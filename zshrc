@@ -22,3 +22,7 @@ precmd()
 {
   _update_ps1
 }
+
+# convenient key bindings
+bindkey '^[^[[D' backward-word
+bindkey '^[^[[C' forward-word
