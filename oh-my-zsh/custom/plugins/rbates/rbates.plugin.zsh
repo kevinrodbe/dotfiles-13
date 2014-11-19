@@ -1,6 +1,6 @@
-c() { cd ~/Projects/rowanoulton/$1; }
-_c() { _files -W ~/Projects/rowanoulton -/; }
-compdef _c c
+p() { cd ~/Projects/rowanoulton/$1; }
+_p() { _files -W ~/Projects/rowanoulton -/; }
+compdef _p p
 
 h() { cd ~/$1; }
 _h() { _files -W ~/ -/; }
