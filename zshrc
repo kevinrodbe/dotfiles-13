@@ -26,3 +26,5 @@ precmd()
 # convenient key bindings
 bindkey '^[^[[D' backward-word
 bindkey '^[^[[C' forward-word
+bindkey '^[begin' beginning-of-line
+bindkey '^[end' end-of-line
