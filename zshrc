@@ -32,16 +32,3 @@ bindkey '^[end' end-of-line
 # golang
 export GOPATH=~/Projects/rowanoulton/go
 export PATH=$PATH:$GOPATH/bin
-
-# from http://items.sjbach.com/319/configuring-vim-right
-set hidden
-set history=1000
-set wildmenu
-set wildmode=list:longest
-set ignorecase
-set smartcase
-set title
-set scrolloff=3
-set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
-set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
-set ruler
