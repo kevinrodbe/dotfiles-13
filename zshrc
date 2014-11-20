@@ -32,3 +32,7 @@ bindkey '^[end' end-of-line
 # golang
 export GOPATH=~/Projects/rowanoulton/go
 export PATH=$PATH:$GOPATH/bin
+
+# aliases
+# @todo: extract these to their own file perhaps
+alias jk='jekyll'
