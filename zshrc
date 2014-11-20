@@ -16,7 +16,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 # for powerline-zsh theme
 function _update_ps1()
 {
-  export PROMPT="$(python2 ~/powerline-zsh.py $?)"
+  export PROMPT="$(~/Projects/rowanoulton/dotfiles/vendor/powerline-zsh/powerline-zsh.py $?)"
 }
 precmd()
 {
