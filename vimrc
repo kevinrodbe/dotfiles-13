@@ -75,6 +75,7 @@ set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusl
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_working_path_mode = 'ra'
 nnoremap <leader>o :CtrlP<CR>
+set wildignore+=**_site/**
 
 " airline
 let g:airline_powerline_fonts = 1
