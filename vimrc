@@ -64,7 +64,7 @@ nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
 inoremap jj <ESC>
 
 " status bar configuration
-set guifont=Monaco\ for\ Powerline:h18
+set guifont=Droid\ Sans\ Mono\ for\ Powerline:h15
 set laststatus=2 " Always display the statusline in all windows
 " set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
 
