@@ -74,3 +74,7 @@ set laststatus=2 " Always display the statusline in all windows
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_working_path_mode = 'ra'
 nnoremap <leader>o :CtrlP<CR>
+
+" airline
+let g:airline_powerline_fonts = 1
+let g:airline_theme = 'powerlineish'
