@@ -36,3 +36,4 @@ export PATH=$PATH:$GOPATH/bin
 # aliases
 # @todo: extract these to their own file perhaps
 alias jk='jekyll'
+alias pingg='ping google.co.in'
