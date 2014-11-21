@@ -1,6 +1,6 @@
 set nocompatible
 
-" @todo: Add pathogen
+execute pathogen#infect()
 
 syntax on
 set number
