@@ -5,7 +5,10 @@ syntax on
 filetype plugin indent on
 
 set number
-set tabstop=4 shiftwidth=4
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
 set smartindent
 
 " from http://items.sjbach.com/319/configuring-vim-right
@@ -20,6 +23,20 @@ set scrolloff=3
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set ruler
+
+" from http://stevelosh.com/blog/2010/09/coming-home-to-vim/
+set modelines=0
+set encoding=utf-8
+set autoindent
+set showmode
+set showcmd
+set visualbell
+set cursorline
+set ttyfast
+set backspace=indent,eol,start
+set laststatus=2
+set relativenumber
+set undofile
 
 " status bar configuration
 set guifont=Monaco\ for\ Powerline:h13
