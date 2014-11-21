@@ -59,6 +59,8 @@ nnoremap k gk
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 " Open .vimrc quickly
 nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
+" Alternate exit from insert mode
+inoremap jj <ESC>
 
 " status bar configuration
 set guifont=Monaco\ for\ Powerline:h13
