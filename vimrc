@@ -72,3 +72,5 @@ set laststatus=2 " Always display the statusline in all windows
 
 " ctrl:p
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+let g:ctrlp_working_path_mode = 'ra'
+nnoremap <leader>o :CtrlP<CR>
