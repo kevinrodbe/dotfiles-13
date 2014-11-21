@@ -40,6 +40,8 @@ set undofile
 set incsearch
 set showmatch
 set hlsearch
+" Map <leader> key to , instead of \
+let mapleader = ","
 " Force me to learn HJKL instead of arrow keys
 nnoremap <up> <nop>
 nnoremap <down> <nop>
