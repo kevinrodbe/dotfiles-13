@@ -1,3 +1,6 @@
 [submodule "vendor/powerline-zsh"]
 	path = vendor/powerline-zsh
 	url = https://github.com/carlcarl/powerline-zsh
+[submodule "vendor/ctrlp"]
+	path = vendor/ctrlp
+	url = https://github.com/kien/ctrlp.vim.git
