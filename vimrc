@@ -37,6 +37,22 @@ set backspace=indent,eol,start
 set laststatus=2
 set relativenumber
 set undofile
+set incsearch
+set showmatch
+set hlsearch
+" Force me to learn HJKL instead of arrow keys
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+" makes j and k work the way you expect instead of working in some archaic
+" “movement by file line instead of screen line” fashion.
+nnoremap j gj
+nnoremap k gk
 
 " status bar configuration
 set guifont=Monaco\ for\ Powerline:h13
