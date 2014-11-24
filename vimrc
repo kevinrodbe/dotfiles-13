@@ -65,6 +65,12 @@ nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
 " Alternate exit from insert mode
 inoremap jj <ESC>
 
+" from @pda - https://github.com/pda/dotvim/blob/master/vimrc
+" Highlight trailing whitespace etc
+highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
+autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+\%#\@<!$/
+
 " status bar configuration
 set guifont=Droid\ Sans\ Mono\ for\ Powerline:h15
 set laststatus=2 " Always display the statusline in all windows
