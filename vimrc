@@ -59,7 +59,7 @@ inoremap <right> <nop>
 nnoremap j gj
 nnoremap k gk
 " Strip trailing whitespace from file
-nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
+nnoremap <leader>w :%s/\s\+$//<cr>:let @/=''<CR>
 " Open .vimrc quickly
 nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
 " Alternate exit from insert mode
