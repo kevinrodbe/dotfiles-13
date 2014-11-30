@@ -65,6 +65,12 @@ nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
 " Alternate exit from insert mode
 inoremap jj <ESC>
 
+" from http://robots.thoughtbot.com/vim-spell-checking
+" Enable spellchecking for Markdown
+autocmd FileType markdown setlocal spell
+" Enable spellchecking for git commit messages
+autocmd FileType gitcommit setlocal spell
+
 " from @pda - https://github.com/pda/dotvim/blob/master/vimrc
 " Highlight trailing whitespace etc
 highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
