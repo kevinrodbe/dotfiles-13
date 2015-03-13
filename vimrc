@@ -65,6 +65,12 @@ nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
 " Alternate exit from insert mode
 inoremap jj <ESC>
 
+" from http://vim.wikia.com/wiki/Quickly_adding_and_deleting_empty_lines
+" Alt+J to insert empty new line below
+nnoremap <silent><A-j> :set paste<CR>m`o<Esc>``:set nopaste<CR>
+" Alt+K to insert empty new line above
+nnoremap <silent><A-k> :set paste<CR>m`O<Esc>``:set nopaste<CR>
+
 " from http://robots.thoughtbot.com/vim-spell-checking
 " Enable spellchecking for Markdown
 autocmd FileType markdown setlocal spell
