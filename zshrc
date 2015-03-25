@@ -42,7 +42,8 @@ function copyPhoneNumber()
 
     # check if file for relevant phone number exists
     if [ ! -f ~/.phone/$country ]; then
-        echo "Phone number not found, add it by creating the file ~/.phone/$country"
+        echo "Phone number not found, add it by creating ~/.phone/$country"
+        return
     fi
 
     # copy phone number to clipboard
