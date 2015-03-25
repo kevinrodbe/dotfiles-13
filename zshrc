@@ -33,7 +33,24 @@ bindkey '^[end' end-of-line
 export GOPATH=~/Projects/rowanoulton/go
 export PATH=$PATH:$GOPATH/bin
 
+# shortcut to copy my phonenumber to clipboard
+# store phone numbers in files named for their respective countries inside ~/.phone
+function copyPhoneNumber()
+{
+    # take first parameter passed as country code (eg nz) otherwise default to de
+    local country=${1:-de}
+
+    # check if file for relevant phone number exists
+    if [ ! -f ~/.phone/$country ]; then
+        echo "Phone number not found, add it by creating the file ~/.phone/$country"
+    fi
+
+    # copy phone number to clipboard
+    cat ~/.phone/$country | pbcopy
+}
+
 # aliases
 # @todo: extract these to their own file perhaps
 alias jk='jekyll'
-alias pingg='ping google.com'
+alias pingg='ping google.de'
+alias phone='copyPhoneNumber'
