@@ -102,6 +102,7 @@ let g:airline_theme = 'powerlineish'
 " let g:airline_section_b = '%{fugitive#statusline()}'
 
 " vim-go
+let g:go_fmt_command = "goimports"
 au FileType go nmap <Leader>s <Plug>(go-implements)
 au FileType go nmap <Leader>i <Plug>(go-info)
 au FileType go nmap <Leader>gv <Plug>(go-doc-vertical)
