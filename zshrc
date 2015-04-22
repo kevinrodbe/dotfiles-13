@@ -55,3 +55,6 @@ function copyPhoneNumber()
 alias jk='jekyll'
 alias pingg='ping google.de'
 alias phone='copyPhoneNumber'
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
