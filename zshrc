@@ -50,11 +50,22 @@ function copyPhoneNumber()
     cat ~/.phone/$country | pbcopy
 }
 
+# shortcut to open a compare window between the current branch and the 2.0 master branch for Sidestage
+function openSidestageV2Comparison()
+{
+    # get the name of the current branch
+    currentBranch=$(git symbolic-ref HEAD | cut -d'/' -f3)
+
+    # open a chrome window and direct to a Github comparison of 2.0 and the current branch
+    open -a "/Applications/Google Chrome.app" "https://github.com/SidestageHQ/sidestage/compare/2.0...$currentBranch"
+}
+
 # aliases
 # @todo: extract these to their own file perhaps
 alias jk='jekyll'
 alias pingg='ping google.de'
 alias phone='copyPhoneNumber'
+alias spr='openSidestageV2Comparison'
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
