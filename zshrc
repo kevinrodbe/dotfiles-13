@@ -66,6 +66,7 @@ alias jk='jekyll'
 alias pingg='ping google.de'
 alias phone='copyPhoneNumber'
 alias spr='openSidestageV2Comparison'
+alias rack='ack --ruby'
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
