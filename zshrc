@@ -50,6 +50,12 @@ function copyPhoneNumber()
     cat ~/.phone/$country | pbcopy
 }
 
+# shortcut to search for file by name in current directory and highlight the results
+function findAndHighlightFilename()
+{
+    find . -iname "*${1}*" | grep ${1}
+}
+
 # shortcut to open a compare window between the current branch and the 2.0 master branch for Sidestage
 function openSidestageV2Comparison()
 {
@@ -67,6 +73,7 @@ alias pingg='ping google.de'
 alias phone='copyPhoneNumber'
 alias spr='openSidestageV2Comparison'
 alias rack='ack --ruby'
+alias f='findAndHighlightFilename'
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
