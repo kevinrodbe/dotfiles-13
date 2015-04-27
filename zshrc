@@ -66,6 +66,12 @@ function openSidestageV2Comparison()
     open -a "/Applications/Google Chrome.app" "https://github.com/SidestageHQ/sidestage/compare/2.0...$currentBranch"
 }
 
+# shortcut to open a Github code search in chrome
+function searchGithubCode()
+{
+    open -a "/Applications/Google Chrome.app" "https://github.com/search?type=Code&utf8=✓&q=${1}"
+}
+
 # aliases
 # @todo: extract these to their own file perhaps
 alias jk='jekyll'
@@ -74,6 +80,7 @@ alias phone='copyPhoneNumber'
 alias spr='openSidestageV2Comparison'
 alias rack='ack --ruby'
 alias f='findAndHighlightFilename'
+alias sg='searchGithubCode'
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
