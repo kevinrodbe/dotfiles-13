@@ -22,6 +22,3 @@
 [submodule "vim/bundle/vim-easy-align"]
 	path = vim/bundle/vim-easy-align
 	url = https://github.com/junegunn/vim-easy-align
-[submodule "vim-coffee-script"]
-	path = vim-coffee-script
-	url = git@github.com:kchmck/vim-coffee-script.git
