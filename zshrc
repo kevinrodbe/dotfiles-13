@@ -56,14 +56,14 @@ function findAndHighlightFilename()
     find . -iname "*${1}*" | grep ${1}
 }
 
-# shortcut to open a compare window between the current branch and the 2.0 master branch for Sidestage
-function openSidestageV2Comparison()
+# shortcut to open a compare window between the current branch and the master branch for Sidestage
+function openSidestageComparison()
 {
     # get the name of the current branch
     currentBranch=$(git symbolic-ref HEAD | cut -d'/' -f3)
 
     # open a chrome window and direct to a Github comparison of 2.0 and the current branch
-    open -a "/Applications/Google Chrome.app" "https://github.com/SidestageHQ/sidestage/compare/2.0...$currentBranch"
+    open -a "/Applications/Google Chrome.app" "https://github.com/SidestageHQ/sidestage/compare/master...$currentBranch"
 }
 
 # shortcut to open a Github code search in chrome
@@ -77,7 +77,7 @@ function searchGithubCode()
 alias jk='jekyll'
 alias pingg='ping google.de'
 alias phone='copyPhoneNumber'
-alias spr='openSidestageV2Comparison'
+alias spr='openSidestageComparison'
 alias rack='ack --ruby'
 alias f='findAndHighlightFilename'
 alias sg='searchGithubCode'
