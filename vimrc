@@ -94,6 +94,7 @@ set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusl
 " ctrl:p
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 nnoremap <leader>o :CtrlP<CR>
 set wildignore+=**_site/**
 
