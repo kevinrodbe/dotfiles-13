@@ -12,6 +12,7 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 set smartindent
+set nowrap
 
 " from http://items.sjbach.com/319/configuring-vim-right
 set hidden
