@@ -129,3 +129,9 @@ let g:syntastic_check_on_wq = 0
 
 " Javascript Standard
 let g:syntastic_javascript_checkers = ['standard']
+
+" vim-easy-align
+" Start interactive EasyAlign in visual mode (e.g. vip<Enter>)
+vmap <Enter> <Plug>(EasyAlign)
+" Start interactive EasyAlign for a motion/text object (e.g. gaip
+nmap ga <Plug>(EasyAlign)
