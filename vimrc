@@ -117,3 +117,15 @@ au FileType go nmap <leader>c <Plug>(go-coverage)
 
 " YouCompleteMe
 set completeopt-=preview " Make sure vim preview window never shows up as per https://github.com/Valloric/YouCompleteMe#i-get-a-weird-window-at-the-top-of-my-file-when-i-use-the-semantic-engine
+
+" Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" Javascript Standard
+let g:syntastic_javascript_checkers = ['standard']
