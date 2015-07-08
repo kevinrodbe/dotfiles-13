@@ -98,6 +98,7 @@ let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 nnoremap <leader>o :CtrlP<CR>
 set wildignore+=**_site/**
+set wildignore+=**tmp/**
 
 " airline
 let g:airline_powerline_fonts = 1
