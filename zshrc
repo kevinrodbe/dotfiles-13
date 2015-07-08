@@ -81,6 +81,7 @@ alias spr='openSidestageComparison'
 alias rack='ack --ruby'
 alias f='findAndHighlightFilename'
 alias sg='searchGithubCode'
+alias mside='mysql -uroot sidestage_development'
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
