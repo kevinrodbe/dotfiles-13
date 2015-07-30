@@ -79,6 +79,10 @@ autocmd FileType markdown setlocal spell
 " Enable spellchecking for git commit messages
 autocmd FileType gitcommit setlocal spell
 
+" from http://stackoverflow.com/questions/158968/changing-vim-indentation-behavior-by-file-type
+" Change tab amount by filetype
+autocmd FileType js setlocal shiftwidth=2 tabstop=2
+
 " from @pda - https://github.com/pda/dotvim/blob/master/vimrc
 " Highlight trailing whitespace etc
 highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
