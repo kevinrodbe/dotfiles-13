@@ -92,6 +92,7 @@ alias pr='openHatchComparison'
 alias rack='ack --ruby'
 alias f='findAndHighlightFilename'
 alias sg='searchGithubCode'
+alias mside='mysql -uroot sidestage_development'
 alias db='mysql -uroot hatch_development'
 
 ### Added by the Heroku Toolbelt
