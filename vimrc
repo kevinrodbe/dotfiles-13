@@ -81,7 +81,8 @@ autocmd FileType gitcommit setlocal spell
 
 " from http://stackoverflow.com/questions/158968/changing-vim-indentation-behavior-by-file-type
 " Change tab amount by filetype
-autocmd FileType js setlocal shiftwidth=2 tabstop=2
+autocmd FileType js setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd Filetype javascript setlocal shiftwidth=2 tabstop=2 softtabstop=2 ts=2 sts=2 sw=2
 
 " from @pda - https://github.com/pda/dotvim/blob/master/vimrc
 " Highlight trailing whitespace etc
