@@ -14,6 +14,10 @@ set expandtab
 set smartindent
 set nowrap
 
+" from http://stackoverflow.com/questions/1098159/vim-stop-existing-swap-file-warnings
+" ಠ_ಠ
+set shortmess+=A
+
 " from http://items.sjbach.com/319/configuring-vim-right
 set hidden
 set history=1000
