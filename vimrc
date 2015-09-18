@@ -108,6 +108,14 @@ let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 nnoremap <leader>o :CtrlP<CR>
 set wildignore+=**_site/**
 set wildignore+=**tmp/**
+" http://superuser.com/questions/649714/can-i-get-the-vim-ctrlp-plugin-to-ignore-a-specific-folder-in-one-project
+let g:ctrlp_user_command = {
+  \ 'types': {
+    \ 1: ['.git', 'cd %s && git ls-files --cached --exclude-standard --others'],
+    \ 2: ['.hg', 'hg --cwd %s locate -I .'],
+    \ },
+  \ 'fallback': 'find %s -type f'
+  \ }
 
 " airline
 let g:airline_powerline_fonts = 1
