@@ -97,3 +97,9 @@ alias db='mysql -uroot hatch_development'
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+# Remove limit on zsh history
+# as per https://github.com/bamos/zsh-history-analysis
+export HISTSIZE=1000000000
+export SAVEHIST=$HISTSIZE
+setopt EXTENDED_HISTORY
