@@ -82,6 +82,13 @@ function searchGithubCode()
     open -a "/Applications/Google Chrome.app" "https://github.com/search?type=Code&utf8=✓&q=${1}"
 }
 
+# shortcut for easily compressing PDFs with ghostscript
+# from https://github.com/omgmog/omgmog.github.com/blob/master/_posts/2014-03-28-compressing-pdf-from-your-mac-or-linux-terminal-with-ghostscript.md
+function compresspdf()
+{
+    gs -sDEVICE=pdfwrite -dNOPAUSE -dQUIET -dBATCH -dPDFSETTINGS=/${3:-"screen"} -dCompatibilityLevel=1.4 -sOutputFile=$2 $1
+}
+
 # aliases
 # @todo: extract these to their own file perhaps
 alias jk='jekyll'
