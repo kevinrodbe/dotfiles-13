@@ -92,7 +92,7 @@ function compresspdf()
 # aliases
 # @todo: extract these to their own file perhaps
 alias jk='jekyll'
-alias pingg='prettyping google.de'
+alias pingg='prettyping google.co.in'
 alias phone='copyPhoneNumber'
 alias spr='openSidestageComparison'
 alias pr='openHatchComparison'
