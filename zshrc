@@ -89,6 +89,16 @@ function compresspdf()
     gs -sDEVICE=pdfwrite -dNOPAUSE -dQUIET -dBATCH -dPDFSETTINGS=/${3:-"screen"} -dCompatibilityLevel=1.4 -sOutputFile=$2 $1
 }
 
+# shortcut to rename .JPG extensions to lowercase .jpg (in current directory)
+# from http://stackoverflow.com/questions/7450818/rename-all-files-in-directory-from-filename-h-to-filename-half
+function fixJpegExtensions()
+{
+    for file in *.JPG
+    do
+        mv "${file}" "${file/.JPG/.jpg}"
+    done
+}
+
 # aliases
 # @todo: extract these to their own file perhaps
 alias jk='jekyll'
@@ -101,6 +111,7 @@ alias f='findAndHighlightFilename'
 alias sg='searchGithubCode'
 alias mside='mysql -uroot sidestage_development'
 alias db='mysql -uroot hatch_development'
+alias fixjpegs='fixJpegExtensions'
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
