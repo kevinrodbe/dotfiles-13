@@ -102,7 +102,7 @@ function fixJpegExtensions()
 # aliases
 # @todo: extract these to their own file perhaps
 alias jk='jekyll'
-alias pingg='prettyping google.co.in'
+alias pingg='prettyping google.co.nz'
 alias phone='copyPhoneNumber'
 alias spr='openSidestageComparison'
 alias pr='openHatchComparison'
