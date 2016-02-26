@@ -156,3 +156,7 @@ let g:syntastic_javascript_checkers = ['standard']
 vmap <Enter> <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip
 nmap ga <Plug>(EasyAlign)
+
+" Enable system mouse scrolling
+" as per http://superuser.com/questions/238362/enable-mouse-for-scrolling-only-in-vim-in-iterm-macosx
+:set mouse=nicr
