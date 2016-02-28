@@ -121,3 +121,7 @@ export PATH="/usr/local/heroku/bin:$PATH"
 export HISTSIZE=1000000000
 export SAVEHIST=$HISTSIZE
 setopt EXTENDED_HISTORY
+
+# Laravel
+# https://laravel.com/docs/5.2
+export PATH="/Users/rowanoulton/.composer/vendor/bin:$PATH"
