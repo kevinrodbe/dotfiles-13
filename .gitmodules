@@ -34,3 +34,6 @@
 [submodule "vim/bundle/vim-es6"]
 	path = vim/bundle/vim-es6
 	url = git@github.com:isRuslan/vim-es6.git
+[submodule "vim/bundle/vim-airline-themes"]
+	path = vim/bundle/vim-airline-themes
+	url = git@github.com:vim-airline/vim-airline-themes.git
