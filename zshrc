@@ -66,16 +66,6 @@ function openSidestageComparison()
     open -a "/Applications/Google Chrome.app" "https://github.com/SidestageHQ/sidestage/compare/master...$currentBranch"
 }
 
-# shortcut to open a compare window between the current branch and the master branch for Hatch
-function openHatchComparison()
-{
-    # get the name of the current branch
-    currentBranch=$(git symbolic-ref HEAD | cut -d'/' -f3)
-
-    # open a chrome window and direct to a Github comparison of master and the current branch
-    open -a "/Applications/Google Chrome.app" "https://github.com/SidestageHQ/hatch/compare/master...$currentBranch"
-}
-
 # shortcut to open a Github code search in chrome
 function searchGithubCode()
 {
@@ -104,13 +94,10 @@ function fixJpegExtensions()
 alias jk='jekyll'
 alias pingg='prettyping google.co.nz'
 alias phone='copyPhoneNumber'
-alias spr='openSidestageComparison'
-alias pr='openHatchComparison'
+# alias spr='openSidestageComparison'
 alias rack='ack --ruby'
 alias f='findAndHighlightFilename'
 alias sg='searchGithubCode'
-alias mside='mysql -uroot sidestage_development'
-alias db='mysql -uroot hatch_development'
 alias fixjpegs='fixJpegExtensions'
 
 ### Added by the Heroku Toolbelt
