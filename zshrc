@@ -99,6 +99,7 @@ alias rack='ack --ruby'
 alias f='findAndHighlightFilename'
 alias sg='searchGithubCode'
 alias fixjpegs='fixJpegExtensions'
+alias cat='ccat'
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
