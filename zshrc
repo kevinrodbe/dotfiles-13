@@ -113,3 +113,7 @@ setopt EXTENDED_HISTORY
 # Laravel
 # https://laravel.com/docs/5.2
 export PATH="/Users/rowanoulton/.composer/vendor/bin:$PATH"
+
+# Opt out of Homebrew analytics (sorry)
+# Ref: https://github.com/Homebrew/brew/blob/master/share/doc/homebrew/Analytics.md
+export HOMEBREW_NO_ANALYTICS=1
