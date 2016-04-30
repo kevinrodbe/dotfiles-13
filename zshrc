@@ -38,7 +38,7 @@ export PATH=$PATH:$GOPATH/bin
 function copyPhoneNumber()
 {
     # take first parameter passed as country code (eg nz) otherwise default to de
-    local country=${1:-de}
+    local country=${1:-nz}
 
     # check if file for relevant phone number exists
     if [ ! -f ~/.phone/$country ]; then
