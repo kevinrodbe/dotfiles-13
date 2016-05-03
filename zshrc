@@ -33,6 +33,16 @@ bindkey '^[end' end-of-line
 export GOPATH=~/Projects/rowanoulton/go
 export PATH=$PATH:$GOPATH/bin
 
+# shortcut to list N most recently edited files
+function listMostRecent()
+{
+    # take first parameter passed as number of results desired, default is 10
+    local max=${1:-10}
+
+    # generate results
+    ls -alth | head -$max
+}
+
 # shortcut to copy my phonenumber to clipboard
 # store phone numbers in files named for their respective countries inside ~/.phone
 function copyPhoneNumber()
@@ -100,6 +110,7 @@ alias f='findAndHighlightFilename'
 alias sg='searchGithubCode'
 alias fixjpegs='fixJpegExtensions'
 alias cat='ccat'
+alias lss='listMostRecent'
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
