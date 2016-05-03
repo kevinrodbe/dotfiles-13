@@ -40,7 +40,7 @@ function listMostRecent()
     local max=${1:-10}
 
     # generate results
-    ls -alth | head -$max
+    ls -lthGA | head -$max
 }
 
 # shortcut to copy my phonenumber to clipboard
