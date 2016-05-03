@@ -128,3 +128,6 @@ export PATH="/Users/rowanoulton/.composer/vendor/bin:$PATH"
 # Opt out of Homebrew analytics (sorry)
 # Ref: https://github.com/Homebrew/brew/blob/master/share/doc/homebrew/Analytics.md
 export HOMEBREW_NO_ANALYTICS=1
+
+export NVM_DIR="/Users/rowanoulton/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
