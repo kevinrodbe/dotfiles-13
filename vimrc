@@ -161,3 +161,7 @@ nmap ga <Plug>(EasyAlign)
 " Enable system mouse scrolling
 " as per http://superuser.com/questions/238362/enable-mouse-for-scrolling-only-in-vim-in-iterm-macosx
 :set mouse=nicr
+
+" Enable jsx parsing in .js files
+" as per https://github.com/mxw/vim-jsx#usage
+let g:jsx_ext_required = 0
