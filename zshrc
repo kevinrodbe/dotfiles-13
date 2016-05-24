@@ -52,7 +52,7 @@ function listMostRecent()
 function copyPhoneNumber()
 {
     # take first parameter passed as country code (eg nz) otherwise default to de
-    local country=${1:-nz}
+    local country=${1:-usa}
 
     # check if file for relevant phone number exists
     if [ ! -f ~/.phone/$country ]; then
