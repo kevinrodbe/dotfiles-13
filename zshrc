@@ -105,7 +105,7 @@ alias sg='searchGithubCode'
 alias fixjpegs='fixJpegExtensions'
 alias cat='ccat'
 alias lss='listMostRecent'
-alias l='ls -lGA'
+alias l='ls -lGAh'
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
