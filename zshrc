@@ -17,16 +17,6 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 powerline-daemon -q
 . $HOME/Library/Python/2.7/lib/python/site-packages/powerline/bindings/zsh/powerline.zsh
 
-# for old powerline-zsh theme
-#function _update_ps1()
-#{
-#  export PROMPT="$(~/Projects/rowanoulton/dotfiles/vendor/powerline-zsh/powerline-zsh.py $?)"
-#}
-#precmd()
-#{
-#  _update_ps1
-#}
-
 # convenient key bindings
 bindkey '^[^[[D' backward-word
 bindkey '^[^[[C' forward-word
