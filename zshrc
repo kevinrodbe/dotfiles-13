@@ -5,7 +5,7 @@ DISABLE_LS_COLORS="true"
 
 plugins=(git bundler brew gem rbates autojump)
 
-export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/bin:$HOME/Library/Python/2.7/bin:$PATH"
 export EDITOR='vim'
 
 source $ZSH/oh-my-zsh.sh
@@ -14,14 +14,18 @@ source $ZSH/oh-my-zsh.sh
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # for powerline-zsh theme
-function _update_ps1()
-{
-  export PROMPT="$(~/Projects/rowanoulton/dotfiles/vendor/powerline-zsh/powerline-zsh.py $?)"
-}
-precmd()
-{
-  _update_ps1
-}
+powerline-daemon -q
+. $HOME/Library/Python/2.7/lib/python/site-packages/powerline/bindings/zsh/powerline.zsh
+
+# for old powerline-zsh theme
+#function _update_ps1()
+#{
+#  export PROMPT="$(~/Projects/rowanoulton/dotfiles/vendor/powerline-zsh/powerline-zsh.py $?)"
+#}
+#precmd()
+#{
+#  _update_ps1
+#}
 
 # convenient key bindings
 bindkey '^[^[[D' backward-word
