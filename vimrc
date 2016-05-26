@@ -161,3 +161,6 @@ nmap ga <Plug>(EasyAlign)
 " Enable system mouse scrolling
 " as per http://superuser.com/questions/238362/enable-mouse-for-scrolling-only-in-vim-in-iterm-macosx
 :set mouse=nicr
+
+" Enable Smarty syntax highlighting on .txt files
+au BufRead,BufNewFile *.txt set filetype=smarty
