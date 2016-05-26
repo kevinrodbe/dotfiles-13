@@ -67,13 +67,14 @@ function findAndHighlightFilename()
 }
 
 # shortcut to open a compare window between the current branch and the master branch for Sidestage
+# note: unused but left for reference
 function openSidestageComparison()
 {
     # get the name of the current branch
     currentBranch=$(git symbolic-ref HEAD | cut -d'/' -f3)
 
     # open a chrome window and direct to a Github comparison of master and the current branch
-    open -a "/Applications/Google Chrome.app" "https://github.com/SidestageHQ/sidestage/compare/master...$currentBranch"
+    open -a "/Applications/Google Chrome.app" "https://github.com/your/project/compare/master...$currentBranch"
 }
 
 # shortcut to open a Github code search in chrome
@@ -104,12 +105,9 @@ function fixJpegExtensions()
 alias jk='jekyll'
 alias pingg='prettyping google.co.nz'
 alias phone='copyPhoneNumber'
-# alias spr='openSidestageComparison'
-alias rack='ack --ruby'
 alias f='findAndHighlightFilename'
 alias sg='searchGithubCode'
 alias fixjpegs='fixJpegExtensions'
-alias cat='ccat'
 alias lss='listMostRecent'
 alias l='ls -lGAh'
 
@@ -130,5 +128,6 @@ export PATH="/Users/rowanoulton/.composer/vendor/bin:$PATH"
 # Ref: https://github.com/Homebrew/brew/blob/master/share/doc/homebrew/Analytics.md
 export HOMEBREW_NO_ANALYTICS=1
 
+# Node version manager
 export NVM_DIR="/Users/rowanoulton/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
