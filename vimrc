@@ -107,18 +107,31 @@ map <C-z> u
 " ctrl:p
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_working_path_mode = 'ra'
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+"let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 nnoremap <leader>o :CtrlP<CR>
 set wildignore+=**_site/**
 set wildignore+=**tmp/**
 " http://superuser.com/questions/649714/can-i-get-the-vim-ctrlp-plugin-to-ignore-a-specific-folder-in-one-project
-let g:ctrlp_user_command = {
-  \ 'types': {
-    \ 1: ['.git', 'cd %s && git ls-files --cached --exclude-standard --others'],
-    \ 2: ['.hg', 'hg --cwd %s locate -I .'],
-    \ },
-  \ 'fallback': 'find %s -type f'
-  \ }
+" let g:ctrlp_user_command = {
+"             \ 'types': {
+"             \ 1: ['.git', 'cd %s && git ls-files --cached --exclude-standard --others'],
+"             \ 2: ['.hg', 'hg --cwd %s locate -I .'],
+"             \ },
+"             \ 'fallback': 'find %s -type f'
+"             \ }
+
+" Switch CtrlP to use Ag (silver surfer) over grep (for speed)
+" as per https://robots.thoughtbot.com/faster-grepping-in-vim
+if executable('ag')
+    " Use ag over grep
+    set grepprg=ag\ --nogroup\ --nocolor
+
+    " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+    let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
+    " ag is fast enough that CtrlP doesn't need to cache
+    " let g:ctrlp_use_caching = 0
+endif
 
 " airline
 let g:airline_powerline_fonts = 1
