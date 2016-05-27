@@ -162,8 +162,11 @@ let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 let g:syntastic_scss_checkers = ['scss_lint']
 
-" Javascript Standard
-let g:syntastic_javascript_checkers = ['standard']
+" Lint JavaScript with ESLint
+let g:syntastic_javascript_checkers = ['eslint']
+
+" PHP Standard
+let g:syntastic_php_checkers = ['php', 'phpcs']
 
 " vim-easy-align
 " Start interactive EasyAlign in visual mode (e.g. vip<Enter>)
@@ -175,5 +178,5 @@ nmap ga <Plug>(EasyAlign)
 " as per http://superuser.com/questions/238362/enable-mouse-for-scrolling-only-in-vim-in-iterm-macosx
 :set mouse=nicr
 
-" Enable Smarty syntax highlighting on .txt files
-au BufRead,BufNewFile *.txt set filetype=smarty
+" Slack-specific commands
+source $HOME/.slackvimrc

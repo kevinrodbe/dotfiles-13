@@ -131,3 +131,7 @@ export HOMEBREW_NO_ANALYTICS=1
 # Node version manager
 export NVM_DIR="/Users/rowanoulton/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# Slack-specific config
+source ~/.slackrc
+
