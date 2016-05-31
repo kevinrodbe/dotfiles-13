@@ -46,3 +46,6 @@
 [submodule "vim/bundle/syntastic-local-eslint.vim"]
 	path = vim/bundle/syntastic-local-eslint.vim
 	url = git@github.com:mtscout6/syntastic-local-eslint.vim.git
+[submodule "vim/bundle/vim-mustache-handlebars"]
+	path = vim/bundle/vim-mustache-handlebars
+	url = git://github.com/mustache/vim-mustache-handlebars.git
