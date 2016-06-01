@@ -187,5 +187,9 @@ nmap ga <Plug>(EasyAlign)
 :nnoremap ^ 0
 :nnoremap 0 ^
 
+" Allow copying to system clipboard from Vim
+" as per https://evertpot.com/osx-tmux-vim-copy-paste-clipboard/
+set clipboard=unnamed
+
 " Slack-specific commands
 source $HOME/.slackvimrc
