@@ -181,5 +181,11 @@ nmap ga <Plug>(EasyAlign)
 " as per http://superuser.com/questions/238362/enable-mouse-for-scrolling-only-in-vim-in-iterm-macosx
 :set mouse=nicr
 
+" Swap commands for "move cursor to start of non-whitespace" and "move cursor
+" to start of line". I use the former much more regularly, and 0 is easier to
+" type than ^
+:nnoremap ^ 0
+:nnoremap 0 ^
+
 " Slack-specific commands
 source $HOME/.slackvimrc
