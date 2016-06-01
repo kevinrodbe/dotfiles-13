@@ -111,7 +111,7 @@ alias fixjpegs='fixJpegExtensions'
 alias lss='listMostRecent'
 alias l='ls -lGAh'
 alias agt='ag -G \.*txt'
-alias aghb='ag -G \.*hbs'
+alias agb='ag -G \.*hbs'
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
