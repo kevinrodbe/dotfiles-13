@@ -9,8 +9,6 @@ plugins=(git bundler brew gem rbates autojump)
 export PATH="/usr/local/bin:$PATH"
 # ... and Powerline
 export PATH="$HOME/Library/Python/2.7/bin:$PATH"
-# ... and Pear (PHP Code sniffing)
-export PATH="$HOME/pear/bin:$PATH"
 
 export EDITOR='vim'
 
