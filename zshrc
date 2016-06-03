@@ -3,7 +3,7 @@ ZSH_THEME="rbates"
 DISABLE_AUTO_UPDATE="true"
 DISABLE_LS_COLORS="true"
 
-plugins=(git bundler brew gem rbates autojump)
+plugins=(git bundler brew gem rbates autojump tmux zsh-autosuggestions)
 
 # For Homebrew
 export PATH="/usr/local/bin:$PATH"
