@@ -49,3 +49,9 @@
 [submodule "vim/bundle/vim-mustache-handlebars"]
 	path = vim/bundle/vim-mustache-handlebars
 	url = git://github.com/mustache/vim-mustache-handlebars.git
+[submodule "vim/bundle/vim-jsdoc"]
+	path = vim/bundle/vim-jsdoc
+	url = git@github.com:heavenshell/vim-jsdoc.git
+[submodule "vim/bundle/ag.vim"]
+	path = vim/bundle/ag.vim
+	url = git@github.com:rking/ag.vim.git
