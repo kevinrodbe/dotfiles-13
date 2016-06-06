@@ -70,6 +70,8 @@ nnoremap <leader>w :%s/\s\+$//<cr>:let @/=''<CR>
 nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
 " Alternate exit from insert mode
 inoremap jj <ESC>
+" Kill the ` command for now
+nnoremap ` <nop>
 
 " from http://vim.wikia.com/wiki/Quickly_adding_and_deleting_empty_lines
 " Alt+J to insert empty new line below
