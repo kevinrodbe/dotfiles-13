@@ -8,7 +8,7 @@ plugins=(git bundler brew gem rbates autojump zsh-autosuggestions)
 # For Homebrew
 export PATH="/usr/local/bin:$PATH"
 # ... and Powerline
-export PATH="$HOME/Library/Python/2.7/bin:$PATH"
+# export PATH="$HOME/Library/Python/2.7/bin:$PATH"
 
 export EDITOR='vim'
 
@@ -18,8 +18,6 @@ source $ZSH/oh-my-zsh.sh
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # for powerline-zsh theme
-powerline-daemon -qk
-powerline-daemon -q
 . $HOME/Library/Python/2.7/lib/python/site-packages/powerline/bindings/zsh/powerline.zsh
 
 # convenient key bindings
