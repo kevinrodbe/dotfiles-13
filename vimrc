@@ -132,17 +132,6 @@ let g:airline_powerline_fonts = 1
 let g:airline_theme = 'powerlineish'
 " let g:airline_section_b = '%{fugitive#statusline()}'
 
-" vim-go
-let g:go_fmt_command = "goimports"
-au FileType go nmap <Leader>s <Plug>(go-implements)
-au FileType go nmap <Leader>i <Plug>(go-info)
-au FileType go nmap <Leader>gv <Plug>(go-doc-vertical)
-au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
-au FileType go nmap <leader>r <Plug>(go-run)
-au FileType go nmap <leader>b <Plug>(go-build)
-au FileType go nmap <leader>t <Plug>(go-test)
-au FileType go nmap <leader>c <Plug>(go-coverage)
-
 " YouCompleteMe
 set completeopt-=preview " Make sure vim preview window never shows up as per https://github.com/Valloric/YouCompleteMe#i-get-a-weird-window-at-the-top-of-my-file-when-i-use-the-semantic-engine
 
