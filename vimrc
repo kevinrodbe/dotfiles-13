@@ -133,7 +133,7 @@ let g:airline_theme = 'powerlineish'
 " let g:airline_section_b = '%{fugitive#statusline()}'
 
 " YouCompleteMe
-set completeopt-=preview " Make sure vim preview window never shows up as per https://github.com/Valloric/YouCompleteMe#i-get-a-weird-window-at-the-top-of-my-file-when-i-use-the-semantic-engine
+" set completeopt-=preview " Make sure vim preview window never shows up as per https://github.com/Valloric/YouCompleteMe#i-get-a-weird-window-at-the-top-of-my-file-when-i-use-the-semantic-engine
 
 " Syntastic
 set statusline+=%#warningmsg#
