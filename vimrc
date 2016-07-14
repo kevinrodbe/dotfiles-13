@@ -125,7 +125,7 @@ let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 let g:fzf_command_prefix = 'Fzf'
 let g:fzf_layout = { 'down': '~40%' }
 nnoremap <silent> <C-p> :FzfFiles<cr>
-nnoremap <silent> <C-b> :FzfBuffers<cr>
+nnoremap <silent> <C-l> :FzfBuffers<cr>
 
 " airline
 let g:airline_powerline_fonts = 1
