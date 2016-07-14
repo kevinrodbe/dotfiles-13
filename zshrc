@@ -26,10 +26,6 @@ bindkey '^[^[[C' forward-word
 bindkey '^[begin' beginning-of-line
 bindkey '^[end' end-of-line
 
-# golang
-export GOPATH=~/Projects/rowanoulton/go
-export PATH=$PATH:$GOPATH/bin
-
 # shortcut to list N most recently edited files
 function listMostRecent()
 {
@@ -110,18 +106,11 @@ alias l='ls -lGAh'
 alias agt='ag -G \.*txt'
 alias agh='ag -G \.*hbs'
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
 # Remove limit on zsh history
 # as per https://github.com/bamos/zsh-history-analysis
 export HISTSIZE=1000000000
 export SAVEHIST=$HISTSIZE
 setopt EXTENDED_HISTORY
-
-# Laravel
-# https://laravel.com/docs/5.2
-export PATH="/Users/rowanoulton/.composer/vendor/bin:$PATH"
 
 # Opt out of Homebrew analytics (sorry)
 # Ref: https://github.com/Homebrew/brew/blob/master/share/doc/homebrew/Analytics.md
