@@ -133,5 +133,4 @@ export NVM_DIR="/Users/rowanoulton/.nvm"
 # Slack-specific config
 source ~/.slackrc
 
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
