@@ -1,0 +1,3 @@
+-x
+--no-mtime
+-o ~/Downloads/%(title)s.%(ext)s

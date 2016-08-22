@@ -111,6 +111,11 @@ alias l='ls -lGAh'
 alias agt='ag -G \.*txt'
 alias agh='ag -G \.*hbs'
 
+# Requires the following:
+# - brew install youtube-dl
+# - brew install ffmpeg
+alias mp3='youtube-dl'
+
 # Remove limit on zsh history
 # as per https://github.com/bamos/zsh-history-analysis
 export HISTSIZE=1000000000
