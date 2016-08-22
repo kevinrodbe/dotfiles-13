@@ -10,6 +10,10 @@ export PATH="/usr/local/bin:$PATH"
 # ... and Powerline
 # export PATH="$HOME/Library/Python/2.7/bin:$PATH"
 
+# Go
+export GOPATH=~/Projects/go
+export PATH=$PATH:$GOPATH/bin
+
 export EDITOR='vim'
 
 source $ZSH/oh-my-zsh.sh
