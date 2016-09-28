@@ -43,8 +43,9 @@ set ttyfast
 set backspace=indent,eol,start
 set laststatus=2
 set relativenumber
+silent !mkdir ~/.vim/backups > /dev/null 2>&1
+set undodir=~/.vim/backups
 set undofile
-set undodir=~/.vim/.undo//
 set incsearch
 set showmatch
 set hlsearch
