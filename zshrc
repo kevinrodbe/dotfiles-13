@@ -130,11 +130,6 @@ export HOMEBREW_NO_ANALYTICS=1
 export NVM_DIR="/Users/rowanoulton/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-# From Art of the commandline
-# https://github.com/jlevy/the-art-of-command-line
-# Use vi style key bindings to edit bash commands on the fly
-set -o vi
-
 # Slack-specific config
 source ~/.slackrc
 
