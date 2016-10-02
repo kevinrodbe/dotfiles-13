@@ -1,7 +1,7 @@
 vim/.netrwhist
 vim/.VimballRecord
 vim/spell/*
-vim/.undo
+vim/backups
 
 # Slack
 slackrc
