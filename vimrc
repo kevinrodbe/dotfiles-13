@@ -172,5 +172,13 @@ nmap ga <Plug>(EasyAlign)
 " as per https://evertpot.com/osx-tmux-vim-copy-paste-clipboard/
 set clipboard=unnamed
 
+" Correct Emmet expansion in JS files that have JSX
+" https://github.com/mattn/emmet-vim/issues/255#issuecomment-215796031
+let g:user_emmet_settings = {
+\  'javascript' : {
+\      'extends' : 'jsx',
+\  },
+\}
+
 " Slack-specific commands
 source $HOME/.slackvimrc
