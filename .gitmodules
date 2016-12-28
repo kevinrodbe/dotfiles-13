@@ -49,3 +49,6 @@
 [submodule "vim/bundle/vim-gitgutter"]
 	path = vim/bundle/vim-gitgutter
 	url = git@github.com:airblade/vim-gitgutter.git
+[submodule "vim/bundle/jsdoc-syntax"]
+	path = vim/bundle/jsdoc-syntax
+	url = git@github.com:othree/jsdoc-syntax.vim.git
