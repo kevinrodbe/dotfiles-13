@@ -116,6 +116,10 @@ alias agh='ag -G \.*hbs'
 # - brew install ffmpeg
 alias mp3='youtube-dl'
 
+# List 10 most recently changed local branches
+# Useful if you are swapping a lot and forgot which branch you wanted to return to
+alias latest="git branch --sort=committerdate | tail -n 10 -r"
+
 # Remove limit on zsh history
 # as per https://github.com/bamos/zsh-history-analysis
 export HISTSIZE=1000000000
