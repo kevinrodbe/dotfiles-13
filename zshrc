@@ -3,7 +3,7 @@ ZSH_THEME="rbates"
 DISABLE_AUTO_UPDATE="true"
 DISABLE_LS_COLORS="true"
 
-plugins=(git bundler brew gem rbates autojump zsh-autosuggestions)
+plugins=(git brew gem rbates autojump zsh-autosuggestions)
 
 # For Homebrew
 export PATH="/usr/local/bin:$PATH"
