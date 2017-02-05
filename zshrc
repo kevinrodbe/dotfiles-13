@@ -7,22 +7,12 @@ plugins=(git brew gem rbates autojump zsh-autosuggestions)
 
 # For Homebrew
 export PATH="/usr/local/bin:$PATH"
-# ... and Powerline
-# export PATH="$HOME/Library/Python/2.7/bin:$PATH"
-
-# Go
-export GOPATH=~/Projects/go
-export PATH=$PATH:$GOPATH/bin
-
 export EDITOR='vim'
 
 source $ZSH/oh-my-zsh.sh
 
-# for Homebrew installed rbenv
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
 # for powerline-zsh theme
-powerline-daemon -q
+# powerline-daemon -q
 . $HOME/Library/Python/2.7/lib/python/site-packages/powerline/bindings/zsh/powerline.zsh
 
 # convenient key bindings
@@ -130,11 +120,25 @@ setopt EXTENDED_HISTORY
 # Ref: https://github.com/Homebrew/brew/blob/master/share/doc/homebrew/Analytics.md
 export HOMEBREW_NO_ANALYTICS=1
 
-# Node version manager
-export NVM_DIR="/Users/rowanoulton/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
 # Slack-specific config
 source ~/.slackrc
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Deadzone: Things that I don't use at the moment
+
+# ... and Powerline
+# export PATH="$HOME/Library/Python/2.7/bin:$PATH"
+
+# Node version manager
+# - @note: This slows shell startup quite a bit
+# export NVM_DIR="/Users/rowanoulton/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# for Homebrew installed rbenv
+# - @note: Also slows shell startup quite a bit
+# if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+# Go
+# export GOPATH=~/Projects/go
+# export PATH=$PATH:$GOPATH/bin
