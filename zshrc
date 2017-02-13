@@ -104,6 +104,7 @@ alias lss='listMostRecent'
 alias l='ls -lGAh'
 alias agt='ag -G \.*txt'
 alias agh='ag -G \.*hbs'
+alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
 
 # Requires the following:
 # - brew install youtube-dl
