@@ -7,6 +7,10 @@ plugins=(git brew gem rbates autojump zsh-autosuggestions)
 
 # For Homebrew
 export PATH="/usr/local/bin:$PATH"
+
+# For node globals
+export PATH=~/.npm-global/bin:$PATH
+
 export EDITOR='vim'
 
 source $ZSH/oh-my-zsh.sh
