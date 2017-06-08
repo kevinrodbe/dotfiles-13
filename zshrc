@@ -58,17 +58,6 @@ function findAndHighlightFilename()
     find . -iname "*${1}*" | grep ${1}
 }
 
-# shortcut to open a compare window between the current branch and the master branch for Sidestage
-# note: unused but left for reference
-function openSidestageComparison()
-{
-    # get the name of the current branch
-    currentBranch=$(git symbolic-ref HEAD | cut -d'/' -f3)
-
-    # open a chrome window and direct to a Github comparison of master and the current branch
-    open -a "/Applications/Google Chrome.app" "https://github.com/your/project/compare/master...$currentBranch"
-}
-
 # shortcut to open a Github code search in chrome
 function searchGithubCode()
 {
