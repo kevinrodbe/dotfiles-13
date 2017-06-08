@@ -124,7 +124,7 @@ if has('nvim')
 endif
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 let g:fzf_command_prefix = 'Fzf'
-let g:fzf_layout = { 'down': '~40%' }
+let g:fzf_layout = { 'down': '~80%' }
 nnoremap <silent> <C-p> :FzfFiles<cr>
 nnoremap <silent> <C-l> :FzfBuffers<cr>
 
