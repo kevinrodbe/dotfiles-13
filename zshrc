@@ -104,6 +104,9 @@ alias mp3='youtube-dl'
 # Useful if you are swapping a lot and forgot which branch you wanted to return to
 alias latest="git branch --sort=committerdate | tail -n 10 -r"
 
+# Shorthand for searching bash history
+alias history="cat ~/.zsh_history"
+
 # Remove limit on zsh history
 # as per https://github.com/bamos/zsh-history-analysis
 export HISTSIZE=1000000000
